@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ultra-Advanced EV Intelligence Platform Design System */
+
+@layer base {
+  :root {
+    /* Professional EV Dashboard Theme - Ultra Dark */
+    --background: 220 20% 4%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 18% 6%;
+    --card-foreground: 210 25% 95%;
+
+    --popover: 220 20% 8%;
+    --popover-foreground: 210 25% 95%;
+
+    --primary: 195 100% 55%;
+    --primary-foreground: 220 20% 4%;
+
+    --secondary: 220 15% 10%;
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 220 15% 8%;
+    --muted-foreground: 210 12% 65%;
+
+    --accent: 142 76% 48%;
+    --accent-foreground: 220 20% 4%;
+
+    --destructive: 0 72% 58%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 12%;
+    --input: 220 15% 8%;
+    --ring: 195 100% 55%;
+
+    /* Advanced EV Intelligence Colors */
+    --ev-electric-blue: 195 100% 55%;
+    --ev-electric-blue-dark: 195 80% 35%;
+    --ev-lime-green: 142 76% 48%;
+    --ev-lime-green-dark: 142 60% 30%;
+    --ev-cyan: 188 94% 50%;
+    --ev-cyan-dark: 188 70% 32%;
+    --ev-orange: 25 100% 58%;
+    --ev-orange-dark: 25 80% 40%;
+    --ev-purple: 270 91% 65%;
+    --ev-purple-dark: 270 70% 45%;
+    --ev-pink: 340 82% 60%;
+    --ev-pink-dark: 340 65% 42%;
+    
+    /* Professional Battery Health Zones */
+    --battery-excellent: 142 76% 48%;
+    --battery-good: 90 100% 50%;
+    --battery-fair: 45 100% 55%;
+    --battery-poor: 25 100% 58%;
+    --battery-critical: 0 72% 58%;
+    
+    /* Advanced Glows and Neon Effects */
+    --glow-primary: 195 100% 55%;
+    --glow-accent: 142 76% 48%;
+    --glow-warning: 25 100% 58%;
+    --glow-success: 142 76% 48%;
+    --glow-info: 188 94% 50%;
+    --glow-danger: 0 72% 58%;
+    
+    /* Premium Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(195 100% 55%) 0%, hsl(195 100% 45%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(142 76% 48%) 0%, hsl(142 60% 38%) 100%);
+    --gradient-tertiary: linear-gradient(135deg, hsl(188 94% 50%) 0%, hsl(188 80% 40%) 100%);
+    --gradient-danger: linear-gradient(135deg, hsl(0 72% 58%) 0%, hsl(0 60% 48%) 100%);
+    --gradient-surface: linear-gradient(135deg, hsl(220 18% 8%) 0%, hsl(220 15% 6%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 100%);
+    
+    /* Advanced Shadows */
+    --shadow-sm: 0 2px 4px -1px hsl(220 20% 2% / 0.3);
+    --shadow-md: 0 4px 12px -2px hsl(220 20% 2% / 0.4);
+    --shadow-lg: 0 8px 24px -4px hsl(220 20% 2% / 0.5);
+    --shadow-xl: 0 16px 48px -8px hsl(220 20% 2% / 0.6);
+    --shadow-glow: 0 0 20px hsl(var(--glow-primary) / 0.3);
+    --shadow-neon: 0 0 40px hsl(var(--glow-accent) / 0.4);
+    
+    /* Motion and Timing */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Exo 2', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  /* Navigation specific styles */
+  .navbar-glow {
+    background: linear-gradient(135deg, 
+      hsla(var(--electric), 0.05) 0%,
+      hsla(var(--background), 0.95) 50%,
+      hsla(var(--lime), 0.05) 100%
+    );
+    backdrop-filter: blur(20px);
+    border: 1px solid hsla(var(--electric), 0.2);
+    box-shadow: 
+      0 8px 32px hsla(var(--electric), 0.1),
+      inset 0 1px 0 hsla(var(--electric), 0.2);
+  }
+
+  .profile-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .profile-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+      0 20px 40px hsla(var(--electric), 0.2),
+      0 0 60px hsla(var(--lime), 0.1);
+  }
+
+  .feature-card {
+    background: linear-gradient(135deg, 
+      hsla(var(--background), 0.8) 0%,
+      hsla(var(--electric), 0.05) 100%
+    );
+    border: 1px solid hsla(var(--electric), 0.15);
+    transition: all 0.3s ease;
+  }
+
+  .feature-card:hover {
+    border-color: hsla(var(--electric), 0.4);
+    box-shadow: 
+      0 10px 30px hsla(var(--electric), 0.15),
+      inset 0 1px 0 hsla(var(--electric), 0.1);
+  }
+
+  .ai-pulse {
+    animation: ai-pulse 2s ease-in-out infinite;
+  }
+
+  .micro-interaction {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .micro-interaction:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+
+  .notification-item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .notification-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+      transparent, 
+      hsla(var(--electric), 0.1), 
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  .notification-item:hover::before {
+    left: 100%;
+  }
+
+  /* Ultra-Advanced Premium Components */
+  .glass-panel {
+    @apply backdrop-blur-xl border border-white/10 rounded-2xl relative overflow-hidden;
+    background: var(--gradient-glass);
+    box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  
+  .glass-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  }
+  
+  .neon-glow {
+    box-shadow: 
+      0 0 5px currentColor,
+      0 0 10px currentColor,
+      0 0 20px currentColor,
+      0 0 40px currentColor;
+  }
+  
+  .premium-glow {
+    box-shadow: var(--shadow-glow), var(--shadow-lg);
+    transition: all var(--transition-smooth);
+  }
+  
+  .premium-glow:hover {
+    box-shadow: var(--shadow-neon), var(--shadow-xl);
+    transform: translateY(-2px);
+  }
+  
+  .holographic-border {
+    position: relative;
+    background: var(--gradient-surface);
+  }
+  
+  .holographic-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: linear-gradient(45deg, 
+      hsl(var(--ev-electric-blue)), 
+      hsl(var(--ev-cyan)), 
+      hsl(var(--ev-lime-green)), 
+      hsl(var(--ev-purple)));
+    border-radius: inherit;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    animation: holographic-rotate 3s linear infinite;
+  }
+  
+  .neural-network-bg {
+    background-image: 
+      radial-gradient(circle at 20% 50%, hsl(var(--ev-electric-blue) / 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(var(--ev-lime-green) / 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, hsl(var(--ev-cyan) / 0.15) 0%, transparent 50%),
+      repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.02) 2px, rgba(255,255,255,0.02) 4px),
+      repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255,255,255,0.02) 2px, rgba(255,255,255,0.02) 4px);
+  }
+  
+  .data-visualization {
+    @apply glass-panel premium-glow;
+    background: var(--gradient-surface);
+  }
+  
+  .metric-card {
+    @apply glass-panel p-6 hover:scale-105 transition-all duration-300;
+    background: var(--gradient-surface);
+  }
+  
+  .metric-card:hover {
+    box-shadow: var(--shadow-neon);
+  }
+  
+  .status-indicator {
+    @apply relative flex items-center justify-center w-3 h-3 rounded-full;
+  }
+  
+  .status-indicator::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: inherit;
+    background: currentColor;
+    opacity: 0.3;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .floating-element {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .scan-animation {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .scan-animation::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    animation: scan 2s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+  
+  .text-electric {
+    color: hsl(var(--ev-electric-blue));
+  }
+  
+  .text-lime {
+    color: hsl(var(--ev-lime-green));
+  }
+  
+  .text-cyan {
+    color: hsl(var(--ev-cyan));
+  }
+  
+  .text-warning {
+    color: hsl(var(--ev-orange));
+  }
+  
+  .bg-electric {
+    background-color: hsl(var(--ev-electric-blue));
+  }
+  
+  .bg-lime {
+    background-color: hsl(var(--ev-lime-green));
+  }
+  
+  .bg-cyan {
+    background-color: hsl(var(--ev-cyan));
+  }
+}
+
+/* Advanced Animations & Keyframes */
+@keyframes holographic-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-10px) rotate(1deg); }
+  66% { transform: translateY(5px) rotate(-1deg); }
+}
+
+@keyframes scan {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+@keyframes neural-pulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes data-stream {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes matrix-rain {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes energy-flow {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+}
+
+@keyframes quantum-glow {
+  0%, 100% {
+    box-shadow: 
+      0 0 5px hsl(var(--electric) / 0.5),
+      0 0 10px hsl(var(--electric) / 0.3),
+      0 0 15px hsl(var(--electric) / 0.2);
+  }
+  33% {
+    box-shadow: 
+      0 0 5px hsl(var(--lime) / 0.5),
+      0 0 10px hsl(var(--lime) / 0.3),
+      0 0 15px hsl(var(--lime) / 0.2);
+  }
+  66% {
+    box-shadow: 
+      0 0 5px hsl(var(--cyan) / 0.5),
+      0 0 10px hsl(var(--cyan) / 0.3),
+      0 0 15px hsl(var(--cyan) / 0.2);
+  }
+}
+
+@keyframes data-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes ai-pulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+    filter: brightness(1.2);
+  }
+}
+
+/* Quantum Level Effects */
+@layer utilities {
+  .quantum-glow {
+    animation: quantum-glow 3s ease-in-out infinite;
+  }
+  
+  .data-pulse {
+    animation: data-pulse 2s ease-in-out infinite;
+  }
+  
+  .ultra-glow {
+    box-shadow: 
+      0 0 20px hsl(var(--electric) / 0.4),
+      0 0 40px hsl(var(--electric) / 0.3),
+      0 0 60px hsl(var(--electric) / 0.2),
+      inset 0 0 20px hsl(var(--electric) / 0.1);
+  }
+}
